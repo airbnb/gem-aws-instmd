@@ -65,5 +65,9 @@ module AWS
       end
       rep.body
     end
+
+    def to_hash
+      {:meta_data => @meta_data, :user_data => @user_data, :dynamic => @dynamic}
+    end
   end
 end

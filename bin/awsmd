@@ -3,4 +3,4 @@
 require 'aws/instmd'
 require 'json'
 
-puts JSON::pretty_generate AWS::InstMD.new
+puts JSON::pretty_generate AWS::InstMD.to_hash
