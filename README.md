@@ -27,7 +27,7 @@ Or install it yourself as:
 
 ### Command-line utility
 
-`awsmd` will dump everything in JSON.
+`awsinstmd` will dump the metadata in JSON.
 
 ### Ruby API
 
