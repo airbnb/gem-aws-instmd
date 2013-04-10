@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'aws/instmd'
+require 'json'
+
+puts JSON::pretty_generate AWS::InstMD.new
