@@ -7,7 +7,8 @@ AWS::InstMD exposes the instance metadata information through a Ruby API.
 169.254.169.254 does not offer a simple view of the whole instance metadata,
 and querying the whole tree can be a bit quirky.
 
-We solve that problem once and for all.
+We wanted to solve that problem once and for all, expose it in a straightforward
+and maintainable way.
 
 ## Installation
 
