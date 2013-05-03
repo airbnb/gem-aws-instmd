@@ -2,8 +2,6 @@ require 'net/http'
 
 module AWS
   class InstMD
-    VERSION = '0.1.0'
-
     def self.method_missing name, *args, &block
       @@root ||= InstMD.new
       @@root.method(name).call(*args, &block)
