@@ -28,11 +28,18 @@
         </ul>
       </header>
       <section>
-        <h1>AWS::InstMD</h1>
+        <h1>
+<a name="awsinstmd" class="anchor" href="#awsinstmd"><span class="octicon octicon-link"></span></a>AWS::InstMD</h1>
 
 <p>AWS::InstMD exposes the instance metadata information through a Ruby API.</p>
 
-<h2>Why?</h2>
+<p><strong>As-is:</strong> This project is not actively maintained or supported.
+While updates may still be made and we welcome feedback, keep in mind we may not respond to pull requests or issues quickly.</p>
+
+<p><strong>Let us know!</strong> If you fork this, or if you use it, or if it helps in anyway, we'd love to hear from you! <a href="mailto:opensource@airbnb.com">opensource@airbnb.com</a></p>
+
+<h2>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h2>
 
 <p>169.254.169.254 does not offer a simple view of the whole instance metadata,
 and querying the whole tree can be a bit quirky.</p>
@@ -40,7 +47,8 @@ and querying the whole tree can be a bit quirky.</p>
 <p>We wanted to solve that problem once and for all, expose it in a straightforward
 and maintainable way.</p>
 
-<h2>Installation</h2>
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>Add this line to your application's Gemfile:</p>
 
@@ -57,13 +65,16 @@ and maintainable way.</p>
 <pre><code>$ gem install aws-instmd
 </code></pre>
 
-<h2>Usage</h2>
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<h3>Command-line utility</h3>
+<h3>
+<a name="command-line-utility" class="anchor" href="#command-line-utility"><span class="octicon octicon-link"></span></a>Command-line utility</h3>
 
 <p><code>awsinstmd</code> will dump the metadata in JSON.</p>
 
-<h3>Ruby API</h3>
+<h3>
+<a name="ruby-api" class="anchor" href="#ruby-api"><span class="octicon octicon-link"></span></a>Ruby API</h3>
 
 <p>The Ruby gem should be easy to use (feedback is obviously welcome).</p>
 
@@ -74,7 +85,8 @@ puts AWS::InstMD.meta_data.instance_id
 puts AWS::InstMD.meta_data.instance_type
 </code></pre>
 
-<h2>Contributing</h2>
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
 <ol>
 <li>Fork it</li>
